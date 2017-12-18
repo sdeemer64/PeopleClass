@@ -1,1 +1,25 @@
 
+<? php
+interface RemoteControl {
+public function powerOn ();
+}
+class Television {
+public function setPower ( $state ) {
+// Truncated Code
+}
+}
+class CableBox {
+public function setPower ( $state ) {
+// Truncated Code
+}
+}
+class TVRemote implements RemoteControl
+{
+private $tv;
+public function __construct ( Television $tv ) {
+$this -> tv = $tv;
+}
+public function powerOn () {
+$this -> tv -> setPower ( true );
+}
+}
