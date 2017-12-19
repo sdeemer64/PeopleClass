@@ -11,9 +11,15 @@ C. Add a class to represent a Pet. A Pet must have a first name. It may also hav
 
 
 OOP Application
+
 Without altering the given code :
+
 ● Represent a universal remote that can turn on a television and a cable box.
+
 ● Represent a remote control user which can push the `power on’ button of a remote control.
+
 ● Have a remote control user push the `power on’ button of a tv remote.
+
 ● Have the same remote control user push the `power on’ button of a universal remote.
+
 
