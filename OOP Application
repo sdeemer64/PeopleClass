@@ -1,5 +1,5 @@
 
-<? php
+<?php
 interface RemoteControl {
 public function powerOn ();
 }
@@ -33,13 +33,6 @@ Without altering the given code :
 ● Have a remote control user push the `power on’ button of a tv remote.
 ● Have the same remote control user push the `power on’ button of a universal remote.
 */
-
-
-
-
-
-
-
 
 
 /* answer 1 */
