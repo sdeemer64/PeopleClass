@@ -23,3 +23,52 @@ public function powerOn () {
 $this -> tv -> setPower ( true );
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* answer 1 */
+class universalRemote extends TVRemote{
+private $tv;
+private $cab;
+public function __construct() {
+$this->tv = new Television;
+$this->cab = new CableBox;
+}
+public function powerOn () {
+$this->tv->setPower( true );
+$this->cab->setPower( true );
+}
+public function TVpowerOn () {
+$this->tv->setPower( true );
+}
+}
+
+/* answer 2 */
+class remoteUser{
+private $universalRemote;
+public function __construct() {
+$this->universalRemote = new universalRemote;
+}
+public function pushAll() {
+$this->universalRemote->powerOn();
+}
+public function pushTv() {
+$this->universalRemote->TVpowerOn();
+}
+}	
+
+$remoteUser=new remoteUser;
+/* answer 3 */
+$remoteUser->pushTv();
+/* answer 4 */
+$remoteUser->pushAll();
